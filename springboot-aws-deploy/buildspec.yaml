@@ -32,4 +32,4 @@ phases:
 artifacts:
   files:
     - imagedefinitions.json
-    - target/springboot-aws-deploy.jar
+    - springboot-aws-deploy/target/springboot-aws-deploy.jar
