@@ -11,7 +11,6 @@ phases:
     commands:
       - echo Build started on `date`
       - echo building the Jar file
-      - cd springboot-aws-deploy
       - mvn clean package
       - echo Building the Docker image...
       - docker build -t $REPOSITORY_URI:latest .
@@ -29,8 +28,7 @@ phases:
       - echo $DOCKER_CONTAINER_NAME
       - echo printing imagedefinitions.json
       - cat imagedefinitions.json
-      - cp springboot-aws-deploy/target/*.jar .
 artifacts:
   files:
     - imagedefinitions.json
-    - '*.jar'
+    - target/*.jar
