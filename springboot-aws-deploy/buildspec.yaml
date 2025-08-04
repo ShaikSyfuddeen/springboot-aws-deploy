@@ -33,7 +33,5 @@ phases:
       - cp target/*.jar ../
 artifacts:
   files:
-    - imagedefinitions.json
-    - target/*.jar
     - springboot-aws-deploy/imagedefinitions.json
     - '*.jar'
